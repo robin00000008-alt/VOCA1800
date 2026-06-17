@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><script data-bard-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjZjYTg2MDA3YjlmMTU0MmYyNDZlYjA0YmUwMzY0MWU2Njc3MTUzMTQiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwMjcyMDAwNDQ5OTA5NzM3NDU0NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzAxZmY1ODgxZWFiYmMyZDdfc3VuZXVuZ192b2NhLmh0bWwtNzkxIn0sImV4cCI6MTc4MTcxMDEwMSwiaWF0IjoxNzgxNzA2NTAxLCJhbGciOiJSUzI1NiJ9.SY_E8CCZ5zCVQOtWHky53xa1fPSMR72M9h6E-1_M61J3LuFypVf6tfQ6YVj6aaVxPQ-GJc3l2J6hstEjYXfci_OqNuUUbXUhpJuMWEnJ1C1ijmUOrBOR7wWFCHClfy0l7Ww7XK93hR3KEJY3xzVGdsRVJCrzhYoDoX3U78soqLJyzI2R0E_7msougoX9Xos-zVsQU_mRG6UYkFtDt0doJqGwmoTVRDUhgYu5HJ_NmXIMQCUY7htlHJzxwTd1rGabVwcCszicFdJvhPEMQ64yvo84Fq3Kt5lLTZOzLhxl6nxSCM2YLdV_7AAIcEZQcL8W8H6cDBpsTqN-4f2-6p-UoQ","c_01ff5881eabbc2d7_suneung_voca.html-791")</script><script data-bard-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){var c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){var b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){let [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;var c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){var d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function ua(a,b){return t(function*(){var d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){var d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield wa(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;let c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){var b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script data-bard-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.g=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.h="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image"]})</script><script data-bard-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수능특강 VOCA 1800 Phrases</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; }
+        /* 체크박스 커스텀 색상 스타일링 보조 (녹색 테마) */
+        input[type="checkbox"] { accent-color: #0d9488; }
+        /* 커스텀 스크롤바 */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f0fdf4; }
+        ::-webkit-scrollbar-thumb { background: #99f6e4; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #5eead4; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.left-0{left:0px}.right-0{right:0px}.z-10{z-index:10}.mx-5{margin-left:1.25rem;margin-right:1.25rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mr-3{margin-right:0.75rem}.mt-5{margin-top:1.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-full{height:100%}.h-16{height:4rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-full{width:100%}.w-16{width:4rem}.w-5{width:1.25rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-x-3{column-gap:0.75rem}.gap-y-1{row-gap:0.25rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-teal-100{--tw-border-opacity:1;border-color:rgb(204 251 241 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-teal-500{--tw-border-opacity:1;border-color:rgb(20 184 166 / var(--tw-border-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-teal-100{--tw-bg-opacity:1;background-color:rgb(204 251 241 / var(--tw-bg-opacity, 1))}.bg-teal-50{--tw-bg-opacity:1;background-color:rgb(240 253 250 / var(--tw-bg-opacity, 1))}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.p-0{padding:0px}.p-1{padding:0.25rem}.p-3{padding:0.75rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-24{padding-bottom:6rem}.pt-10{padding-top:2.5rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:0.05em}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-teal-500{--tw-text-opacity:1;color:rgb(20 184 166 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_-10px_20px_-5px_rgba\(0\2c 0\2c 0\2c 0\.05\)\]{--tw-shadow:0 -10px 20px -5px rgba(0,0,0,0.05);--tw-shadow-colored:0 -10px 20px -5px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-teal-900\/20{--tw-shadow-color:rgb(19 78 74 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-teal-600\/30{--tw-shadow-color:rgb(13 148 136 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-700:hover{--tw-bg-opacity:1;background-color:rgb(15 118 110 / var(--tw-bg-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.disabled\:opacity-50:disabled{opacity:0.5}.disabled\:active\:scale-100:active:disabled{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:h-\[800px\]{height:800px}.sm\:w-\[420px\]{width:420px}.sm\:rounded-3xl{border-radius:1.5rem}.sm\:rounded-b-3xl{border-bottom-right-radius:1.5rem;border-bottom-left-radius:1.5rem}.sm\:p-4{padding:1rem}}</style></head>
+<body class="font-sans text-slate-800 bg-emerald-50 min-h-screen flex items-center justify-center sm:p-4 p-0">
+    
+    <div id="app" class="w-full h-full sm:h-[800px] sm:w-[420px] sm:rounded-3xl overflow-hidden shadow-2xl shadow-teal-900/20 bg-white relative flex flex-col border border-teal-100">
+    <div class="flex-1 overflow-y-auto pb-24 custom-scrollbar flex flex-col h-full">
+        <div class="text-center mb-4 pt-10 px-5 shrink-0">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-teal-100 text-teal-600 mb-4 shadow-inner">
+                <i class="fa-solid fa-graduation-cap text-3xl"></i>
+            </div>
+            <h1 class="text-2xl font-extrabold text-slate-800 mb-1">
+                VOCA 1800 Phrases
+            </h1>
+            <p class="text-teal-600 font-medium">수능특강 영어 어휘 마스터</p>
+            
+            <button onclick="downloadApp()" class="mt-5 text-sm bg-slate-800 hover:bg-slate-700 text-white py-2.5 px-6 rounded-full font-bold transition-transform transform active:scale-95 inline-flex items-center gap-2 shadow-md">
+                <i class="fa-solid fa-download"></i> 이 앱을 파일로 다운로드
+            </button>
+        </div>
+
+        
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 mx-5 border border-slate-100 shrink-0">
+            <div class="flex justify-between items-end mb-4">
+                <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-teal-500"></i> 학습 범위 (Set)
+                </h2>
+                <div class="space-x-1">
+                    <button onclick="selectAllSets(true)" class="text-xs text-teal-600 hover:underline">전체선택</button>
+                    <span class="text-slate-300">|</span>
+                    <button onclick="selectAllSets(false)" class="text-xs text-slate-500 hover:underline">해제</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-1">
+                
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(1)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 1</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 1 ~ 20</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(2)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 2</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 21 ~ 40</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(3)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 3</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 41 ~ 60</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(4)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 4</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 61 ~ 80</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(5)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 5</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 81 ~ 100</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(6)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 6</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 101 ~ 120</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(7)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 7</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 121 ~ 140</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(8)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 8</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 141 ~ 160</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(9)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 9</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 161 ~ 180</span>
+        </label>
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border border-teal-500 bg-teal-50 cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" checked="" onchange="toggleSet(10)" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set 10</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. 181 ~ 189</span>
+        </label>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 mx-5 border border-slate-100 shrink-0">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-gear text-teal-500"></i> 퀴즈 설정
+            </h2>
+            
+            <div class="mb-5">
+                <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">문제 유형</p>
+                <div class="flex bg-slate-100 p-1 rounded-xl">
+                    <button onclick="setQuizMode('enToKo')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all text-slate-500">영 ➔ 한</button>
+                    <button onclick="setQuizMode('koToEn')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all text-slate-500">한 ➔ 영</button>
+                    <button onclick="setQuizMode('mixed')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all bg-white shadow-sm text-teal-600">혼합</button>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">출제 순서</p>
+                <div class="flex bg-slate-100 p-1 rounded-xl">
+                    <button onclick="setIsRandom(false)" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all bg-white shadow-sm text-teal-600">순서대로</button>
+                    <button onclick="setIsRandom(true)" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all text-slate-500">랜덤 섞기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단 고정 버튼 -->
+    <div class="p-5 bg-white sm:rounded-b-3xl absolute bottom-0 left-0 right-0 border-t border-slate-100 z-10 shadow-[0_-10px_20px_-5px_rgba(0,0,0,0.05)]">
+        <button onclick="startQuiz()" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg shadow-teal-600/30 transition-transform transform active:scale-95 disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 text-lg">
+            <i class="fa-solid fa-play"></i>
+            새로 시작하기
+        </button>
+    </div>
+    </div>
+
+<script>
+// --- 1. 단어 데이터 (PDF 추출 1~189번) ---
+const WORD_DATA = [
+  { id: 1, set: 1, en: 'take pride in', ko: '~에 대해 자부심을 가지다' },
+  { id: 2, set: 1, en: 'file a complaint', ko: '정식으로 항의를 제기하다' },
+  { id: 3, set: 1, en: 'take action', ko: '조치를 취하다' },
+  { id: 4, set: 1, en: 'settle into', ko: '~에 자리 잡다' },
+  { id: 5, set: 1, en: 'apply for', ko: '~ 신청하다' },
+  { id: 6, set: 1, en: 'show off', ko: '~을 과시하다' },
+  { id: 7, set: 1, en: 'show up', ko: '(예정된 곳에) 나타나다' },
+  { id: 8, set: 1, en: 'turn down', ko: '~을 거절하다' },
+  { id: 9, set: 1, en: 'pass on to', ko: '~에게 물려주다' },
+  { id: 10, set: 1, en: 'be afraid of', ko: '~을 두려워하다' },
+  { id: 11, set: 1, en: 'nothing but', ko: '다름 아닌 ~. ~일 뿐인' },
+  { id: 12, set: 1, en: 'leave behind', ko: '~을 뒤에 남기다' },
+  { id: 13, set: 1, en: 'belong to', ko: '~에 속하다' },
+  { id: 14, set: 1, en: 'keep from -ing', ko: '~이...하는 것을 막다' },
+  { id: 15, set: 1, en: 'deal with', ko: '~을 처리하다, ~을 다루다' },
+  { id: 16, set: 1, en: 'much less', ko: '~은 고사하고, ~하기는커녕' },
+  { id: 17, set: 1, en: 'interfere with', ko: '~을 방해하다' },
+  { id: 18, set: 1, en: 'be devoted to', ko: '~에 전념하다, ~에 헌신하다' },
+  { id: 19, set: 1, en: 'take part in', ko: '~에 참여하다' },
+  { id: 20, set: 1, en: 'no doubt', ko: '의심의 여지 없이' },
+  { id: 21, set: 2, en: 'throw away', ko: '~을 버리다' },
+  { id: 22, set: 2, en: 'be inclined to', ko: '~하고 싶어 하다, ~하는 경향이 있다' },
+  { id: 23, set: 2, en: 'at the expense of', ko: '~을 희생하여' },
+  { id: 24, set: 2, en: 'on the grounds that', ko: '~이라는 이유로' },
+  { id: 25, set: 2, en: 'make efforts to', ko: '~하려고 노력하다' },
+  { id: 26, set: 2, en: 'thanks to', ko: '덕분에' },
+  { id: 27, set: 2, en: 'have a tendency to', ko: '~하는 경향이 있다' },
+  { id: 28, set: 2, en: 'spring from', ko: '~에서 비롯되다' },
+  { id: 29, set: 2, en: 'be derived from', ko: '~에서 유래하다' },
+  { id: 30, set: 2, en: 'depend upon', ko: '~에 의존하다' },
+  { id: 31, set: 2, en: 'indulge in', ko: '~에 몰두하다' },
+  { id: 32, set: 2, en: 'compared to', ko: '~에 비해' },
+  { id: 33, set: 2, en: 'in terms of', ko: '~의 면에서, ~의 관점에서' },
+  { id: 34, set: 2, en: 'participate in', ko: '~에 참여하다' },
+  { id: 35, set: 2, en: 'be committed to', ko: '~에 전념하다, ~에 헌신하다' },
+  { id: 36, set: 2, en: 'dedicate oneself to', ko: '~에 헌신하다' },
+  { id: 37, set: 2, en: 'free of charge', ko: '무료로' },
+  { id: 38, set: 2, en: 'from that point on', ko: '그 시점부터 나아가' },
+  { id: 39, set: 2, en: 'care for', ko: '~을 돌보다' },
+  { id: 40, set: 2, en: 'in particular', ko: '특히' },
+  { id: 41, set: 3, en: 'in parallel with', ko: '~과 나란히' },
+  { id: 42, set: 3, en: 'result in', ko: '~을 야기하다, ~을 낳다' },
+  { id: 43, set: 3, en: 'thirst for', ko: '~을 갈망하다' },
+  { id: 44, set: 3, en: 'be better off', ko: '~하는 편이 더 낫다' },
+  { id: 45, set: 3, en: 'in need of', ko: '~을 필요로 하고' },
+  { id: 46, set: 3, en: 'take up', ko: '~을 다시 시작하다' },
+  { id: 47, set: 3, en: 'for the sake of', ko: '~을 위해' },
+  { id: 48, set: 3, en: 'be concerned with', ko: '~에 관심을 두다, ~에 관계가 있다' },
+  { id: 49, set: 3, en: 'be correlated to', ko: '~과 상관관계가 있다' },
+  { id: 50, set: 3, en: 'be similar to', ko: '~과 유사하다' },
+  { id: 51, set: 3, en: 'rather than', ko: '~이라기보다는' },
+  { id: 52, set: 3, en: 'keep in mind', ko: '~을 염두에 두다' },
+  { id: 53, set: 3, en: 'consist of', ko: '~으로 이루어지다, ~으로 구성되다' },
+  { id: 54, set: 3, en: 'be party to', ko: '~에 관여하다' },
+  { id: 55, set: 3, en: 'in the sense of', ko: '~이라는 의미에서' },
+  { id: 56, set: 3, en: 'go back to', ko: '~까지 거슬러 올라가다' },
+  { id: 57, set: 3, en: 'take in', ko: '~을 받아들이다, ~을 수용하다' },
+  { id: 58, set: 3, en: 'be made up of', ko: '~으로 구성되다' },
+  { id: 59, set: 3, en: 'be composed of', ko: '~으로 구성되다' },
+  { id: 60, set: 3, en: 'with regard to', ko: '~에 관해서' },
+  { id: 61, set: 4, en: 'do away with', ko: '~을 없애다' },
+  { id: 62, set: 4, en: 'up front', ko: '솔직하게, 처음부터' },
+  { id: 63, set: 4, en: 'make the point', ko: '~을 분명히 보여 주다, 강조하다' },
+  { id: 64, set: 4, en: 'as a result', ko: '그 결과' },
+  { id: 65, set: 4, en: 'write up', ko: '~을 작성하다' },
+  { id: 66, set: 4, en: 'come up with', ko: '~을 생각해 내다' },
+  { id: 67, set: 4, en: 'give up', ko: '~을 포기하다' },
+  { id: 68, set: 4, en: 'bring about', ko: '~을 유발하다, ~을 초래하다' },
+  { id: 69, set: 4, en: 'be likely to', ko: '~할 가능성이 있다' },
+  { id: 70, set: 4, en: 'bask in', ko: '~을 누리다' },
+  { id: 71, set: 4, en: 'with respect to', ko: '~이라는 관점에서, ~에 관하여' },
+  { id: 72, set: 4, en: 'benefit from', ko: '~에서 이익을 얻다' },
+  { id: 73, set: 4, en: 'struggle to', ko: '~하려고 애쓰다, ~하려고 분투하다' },
+  { id: 74, set: 4, en: 'for instance', ko: '예를 들어' },
+  { id: 75, set: 4, en: 'stem from', ko: '~에서 비롯되다' },
+  { id: 76, set: 4, en: 'out of the blue', ko: '갑자기' },
+  { id: 77, set: 4, en: 'on average', ko: '평균적으로' },
+  { id: 78, set: 4, en: 'strike up', ko: '(대화 관계 등을) 시작하다[트다]' },
+  { id: 79, set: 4, en: 'in addition to', ko: '~이외에도' },
+  { id: 80, set: 4, en: 'hold on to', ko: '~을 계속 보유하다, ~을 고수하다' },
+  { id: 81, set: 5, en: 'no longer', ko: '더 이상 ~이 아닌' },
+  { id: 82, set: 5, en: 'take place', ko: '일어나다, 열리다' },
+  { id: 83, set: 5, en: 'keep up with', ko: '~을 따라잡다, ~에 뒤떨어지지 않다' },
+  { id: 84, set: 5, en: 'in contrast', ko: '그에 반해서, 그와 대조적으로' },
+  { id: 85, set: 5, en: 'be confronted with', ko: '~에 직면하다' },
+  { id: 86, set: 5, en: 'go viral', ko: '입소문이 나다' },
+  { id: 87, set: 5, en: 'pay off', ko: '성과를 거두다, 성공하다' },
+  { id: 88, set: 5, en: 'make sense', ko: '이치에 맞다' },
+  { id: 89, set: 5, en: 'fall back on', ko: '~에 의존하다' },
+  { id: 90, set: 5, en: 'on the other hand', ko: '반면에' },
+  { id: 91, set: 5, en: 'stop from -ing', ko: '~이...하는 것을 막다' },
+  { id: 92, set: 5, en: 'be responsible for', ko: '~에 대해 책임이 있다' },
+  { id: 93, set: 5, en: 'be familiar with', ko: '~에 익숙하다, ~에 친숙하다' },
+  { id: 94, set: 5, en: 'turn away', ko: '~을 거절하다' },
+  { id: 95, set: 5, en: 'come across', ko: '~을 우연히 발견하다, ~과 우연히 마주치다' },
+  { id: 96, set: 5, en: 'as good as', ko: '~과 다름없는, ~과 같은' },
+  { id: 97, set: 5, en: 'weigh on', ko: '~을 압박하다' },
+  { id: 98, set: 5, en: 'get through', ko: '~을 벗어나다' },
+  { id: 99, set: 5, en: 'reach out', ko: '연락하다' },
+  { id: 100, set: 5, en: 'more or less', ko: '어느 정도, 대략' },
+  { id: 101, set: 6, en: 'no more than', ko: '단지 ~에 불과한' },
+  { id: 102, set: 6, en: 'for sure', ko: '확실히' },
+  { id: 103, set: 6, en: 'in exchange for', ko: '~에 대한 보답으로, ~에 대한 대가로' },
+  { id: 104, set: 6, en: 'act as', ko: '~으로서의 역할을 하다[맡다]' },
+  { id: 105, set: 6, en: 'cut down on', ko: '~을 줄이다' },
+  { id: 106, set: 6, en: 'be deprived of', ko: '~을 빼앗기다' },
+  { id: 107, set: 6, en: 'be known as', ko: '~으로 알려지다' },
+  { id: 108, set: 6, en: 'have an effect on', ko: '~에 영향을 미치다' },
+  { id: 109, set: 6, en: 'account for', ko: '~을 설명하다' },
+  { id: 110, set: 6, en: 'be confined to', ko: '~에 들어박혀[갇혀] 있다' },
+  { id: 111, set: 6, en: 'in search of', ko: '~을 찾아서' },
+  { id: 112, set: 6, en: 'place emphasis on', ko: '~을 강조하다' },
+  { id: 113, set: 6, en: 'be interested in', ko: '~에 관심을 가지다' },
+  { id: 114, set: 6, en: 'depend on', ko: '~에 의존하다, ~에 의지하다' },
+  { id: 115, set: 6, en: 'yield to', ko: '~으로 대체되다' },
+  { id: 116, set: 6, en: 'in practice', ko: '실제로' },
+  { id: 117, set: 6, en: 'be associated with', ko: '~과 관련되다' },
+  { id: 118, set: 6, en: 'be related to', ko: '~과 연관되다' },
+  { id: 119, set: 6, en: 'when it comes to', ko: '~에 관해서, ~에 관해서라면' },
+  { id: 120, set: 6, en: 'go through', ko: '~을 겪다, ~을 경험하다' },
+  { id: 121, set: 7, en: 'prior to', ko: '~하기 전에' },
+  { id: 122, set: 7, en: 'depending on', ko: '~에 따라' },
+  { id: 123, set: 7, en: 'distinguish from ...', ko: '~과...을 구분하다' },
+  { id: 124, set: 7, en: 'pick up', ko: '~을 줍다' },
+  { id: 125, set: 7, en: 'that is to say', ko: '즉' },
+  { id: 126, set: 7, en: 'care about', ko: '~에 대해 신경 쓰다, ~에 마음을 쓰다' },
+  { id: 127, set: 7, en: 'cross one\'s fingers', ko: '기도하다, 행운을 빌다' },
+  { id: 128, set: 7, en: 'force up', ko: '~을 올리다' },
+  { id: 129, set: 7, en: 'as a result of', ko: '~의 결과로서' },
+  { id: 130, set: 7, en: 'be subject to', ko: '~의 영향을 받다' },
+  { id: 131, set: 7, en: 'set out', ko: '(음식을) 내놓다, 착수하다' },
+  { id: 132, set: 7, en: 'take advantage of', ko: '~을 이용하다' },
+  { id: 133, set: 7, en: 'go a long way', ko: '크게 도움이 되다' },
+  { id: 134, set: 7, en: 'look forward to', ko: '~을 고대하다' },
+  { id: 135, set: 7, en: 'set up', ko: '~을 설치하다' },
+  { id: 136, set: 7, en: 'run across', ko: '~을 우연히 접하다' },
+  { id: 137, set: 7, en: 'hand over', ko: '~을 넘기다' },
+  { id: 138, set: 7, en: 'engage in', ko: '~에 참여하다' },
+  { id: 139, set: 7, en: 'contribute to', ko: '~을 차지하다, ~에 기여하다' },
+  { id: 140, set: 7, en: 'excel in', ko: '~에 탁월하다' },
+  { id: 141, set: 8, en: 'qualify for', ko: '~의 자격을 얻다' },
+  { id: 142, set: 8, en: 'refer to as ...', ko: '~을...이라고 언급하다' },
+  { id: 143, set: 8, en: 'bear to', ko: '~하는 것을 견디다, ~을 견디다' },
+  { id: 144, set: 8, en: 'by and large', ko: '대체로' },
+  { id: 145, set: 8, en: 'get around to', ko: '마침내 ~하게 되다, ~할 시간을 내다' },
+  { id: 146, set: 8, en: 'accustomed to', ko: '~에 익숙한' },
+  { id: 147, set: 8, en: 'overwhelmed with', ko: '~으로 넘치는' },
+  { id: 148, set: 8, en: 'stand for', ko: '~을 상징하다' },
+  { id: 149, set: 8, en: 'get along', ko: '잘 지내다' },
+  { id: 150, set: 8, en: 'vice versa', ko: '반대의 경우도 마찬가지이다' },
+  { id: 151, set: 8, en: 'play a role', ko: '역할을 하다' },
+  { id: 152, set: 8, en: 'be addicted to', ko: '~에 중독되다' },
+  { id: 153, set: 8, en: 'in one\'s absence', ko: '~이 없는 사이에' },
+  { id: 154, set: 8, en: 'at one\'s earliest convenience', ko: '가급적 빨리, 되도록 일찍' },
+  { id: 155, set: 8, en: 'pass by', ko: '~의 옆을 지나가다' },
+  { id: 156, set: 8, en: 'be supposed to', ko: '~하기로 되어 있다' },
+  { id: 157, set: 8, en: 'catch up with', ko: '~을 따라잡다' },
+  { id: 158, set: 8, en: 'be ready for', ko: '~에 대한 준비가 되어 있다' },
+  { id: 159, set: 8, en: 'devote to', ko: '~을...에 바치다' },
+  { id: 160, set: 8, en: 'get sucked into', ko: '~에 휘말리다' },
+  { id: 161, set: 9, en: 'pave the way for', ko: '~을 위해 길을 열다, ~에 대해 준비하다' },
+  { id: 162, set: 9, en: 'rely on', ko: '~에 의존하다' },
+  { id: 163, set: 9, en: 'pass away', ko: '세상을 떠나다, 사망하다' },
+  { id: 164, set: 9, en: 'sign up', ko: '신청하다' },
+  { id: 165, set: 9, en: 'make the point that', ko: '~이라고 주장[강조]하다' },
+  { id: 166, set: 9, en: 'relative to', ko: '~과 비교하면' },
+  { id: 167, set: 9, en: 'hold together', ko: '~을 하나로 묶다' },
+  { id: 168, set: 9, en: 'take for granted', ko: '~을 당연하게 여기다' },
+  { id: 169, set: 9, en: 'speak up', ko: '(의견을) 말하다[밝히다]' },
+  { id: 170, set: 9, en: 'anchor against ...', ko: '~을...에 고정하다' },
+  { id: 171, set: 9, en: 'on the contrary', ko: '반대로, 오히려' },
+  { id: 172, set: 9, en: 'flow from', ko: '~에서 나오다' },
+  { id: 173, set: 9, en: 'shut down', ko: '~을 멈추다' },
+  { id: 174, set: 9, en: 'with the help of', ko: '~의 도움으로, ~ 덕택에' },
+  { id: 175, set: 9, en: 'hesitate to', ko: '~하기를 주저하다' },
+  { id: 176, set: 9, en: 'derive from ...', ko: '...에게서 ~을 얻다' },
+  { id: 177, set: 9, en: 'prevent from', ko: '~이...하지 못하게 하다' },
+  { id: 178, set: 9, en: 'be relieved of', ko: '~이 완화되다' },
+  { id: 179, set: 9, en: 'resort to', ko: '~에 의존하다' },
+  { id: 180, set: 9, en: 'all but', ko: '거의' },
+  { id: 181, set: 10, en: 'hold true', ko: '진실이다, 딱 들어맞다' },
+  { id: 182, set: 10, en: 'at no cost', ko: '무료로' },
+  { id: 183, set: 10, en: 'tune in to', ko: '~에 주의를 집중하다, ~에 채널을 맞추다' },
+  { id: 184, set: 10, en: 'do the trick', ko: '효험[효과]이 있다' },
+  { id: 185, set: 10, en: 'out of thin air', ko: '난데없이' },
+  { id: 186, set: 10, en: 'set in', ko: '시작되다' },
+  { id: 187, set: 10, en: 'in principle', ko: '이론적으로' },
+  { id: 188, set: 10, en: 'miss out on', ko: '~을 놓치다' },
+  { id: 189, set: 10, en: 'look out for', ko: '~을 챙기다, ~을 보살피다' }
+];
+
+// --- 2. 상태 관리 (고유 키 사용) ---
+const STORAGE_KEY = 'suneung_voca_session_emerald_v2';
+
+// 고유한 세트 번호들 추출 (1~10)
+const allSets = [...new Set(WORD_DATA.map(w => w.set))];
+
+let state = {
+    view: 'home',
+    savedSession: null,
+    selectedSets: [...allSets], // 기본적으로 전체 세트 선택
+    quizMode: 'mixed',
+    isRandom: false,
+    quizList: [], // 이전 option/userAnswer 정보를 담은 퀴즈 배열
+    currentIndex: 0
+};
+
+let autoAdvanceTimeout = null;
+
+// 유틸: 배열 랜덤 섞기
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
+
+// --- 3. 로컬 스토리지 데이터 로드 ---
+function loadSavedSession() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+        state.savedSession = JSON.parse(saved);
+    } else {
+        state.savedSession = null;
+    }
+}
+
+// --- 4. 액션 핸들러 ---
+window.toggleSet = (setNum) => {
+    if (state.selectedSets.includes(setNum)) {
+        state.selectedSets = state.selectedSets.filter(n => n !== setNum);
+    } else {
+        state.selectedSets.push(setNum);
+        state.selectedSets.sort((a, b) => a - b);
+    }
+    render();
+};
+
+window.selectAllSets = (bool) => {
+    state.selectedSets = bool ? [...allSets] : [];
+    render();
+}
+
+window.setQuizMode = (mode) => {
+    state.quizMode = mode;
+    render();
+};
+
+window.setIsRandom = (bool) => {
+    state.isRandom = bool;
+    render();
+};
+
+// 퀴즈 문제 목록 생성 (보기 포함)
+function prepareQuizData(filteredWords, mode) {
+    return filteredWords.map(word => {
+        const isEnToKo = mode === 'enToKo' || (mode === 'mixed' && Math.random() > 0.5);
+        const correctAnswer = isEnToKo ? word.ko : word.en;
+        const questionText = isEnToKo ? word.en : word.ko;
+        
+        // 오답 3개 추출
+        const wrongOptions = WORD_DATA
+          .filter(w => w.id !== word.id && (isEnToKo ? w.ko !== correctAnswer : w.en !== correctAnswer))
+          .sort(() => 0.5 - Math.random())
+          .slice(0, 3)
+          .map(w => isEnToKo ? w.ko : w.en);
+
+        const options = shuffleArray([correctAnswer, ...wrongOptions]);
+        
+        return {
+            ...word,
+            questionText,
+            correctAnswer,
+            isEnToKo,
+            options,
+            userAnswer: null // 초기에는 푼 상태가 아님
+        };
+    });
+}
+
+window.startQuiz = () => {
+    if (state.selectedSets.length === 0) return;
+
+    clearProgressSilent(); // 새로 시작하므로 기존 기록 삭제
+
+    let filteredWords = WORD_DATA.filter(w => state.selectedSets.includes(w.set));
+    if (state.isRandom) filteredWords = shuffleArray(filteredWords);
+
+    state.quizList = prepareQuizData(filteredWords, state.quizMode);
+    state.currentIndex = 0;
+    state.view = 'quiz';
+    
+    render();
+};
+
+window.resumeQuiz = () => {
+    if (!state.savedSession) return;
+    
+    state.quizList = state.savedSession.quizList;
+    state.currentIndex = state.savedSession.currentIndex;
+    state.selectedSets = state.savedSession.selectedSets;
+    state.quizMode = state.savedSession.quizMode;
+    state.isRandom = state.savedSession.isRandom;
+    
+    state.view = 'quiz';
+    render();
+};
+
+window.saveProgress = () => {
+    const sessionData = {
+        quizList: state.quizList,
+        currentIndex: state.currentIndex,
+        selectedSets: state.selectedSets,
+        quizMode: state.quizMode,
+        isRandom: state.isRandom,
+        timestamp: Date.now()
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(sessionData));
+    
+    alert('현재 진행 상황이 저장되었습니다!');
+    state.view = 'home';
+    loadSavedSession();
+    render();
+};
+
+window.clearProgress = () => {
+    if(confirm('정말 저장된 학습 기록을 지우시겠습니까?')) {
+        clearProgressSilent();
+        render();
+    }
+};
+
+function clearProgressSilent() {
+    localStorage.removeItem(STORAGE_KEY);
+    state.savedSession = null;
+}
+
+window.goToHome = () => {
+    state.view = 'home';
+    render();
+};
+
+window.downloadApp = () => {
+    const htmlContent = '<!DOCTYPE html>\n<html lang="ko">\n' + document.documentElement.innerHTML + '\n</html>';
+    const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = '수능특강_VOCA_퀴즈앱_초록.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+};
+
+// 정답 선택 시
+window.selectOption = (optIndex) => {
+    const currentWord = state.quizList[state.currentIndex];
+    
+    // 이미 답을 고른 상태(리뷰 중)라면 무시
+    if (currentWord.userAnswer) return; 
+    
+    currentWord.userAnswer = currentWord.options[optIndex];
+    render(); // 즉시 O/X 표시 업데이트
+
+    // 1초 후 자동으로 다음으로 넘어가기
+    clearTimeout(autoAdvanceTimeout);
+    autoAdvanceTimeout = setTimeout(() => {
+        if (state.currentIndex + 1 < state.quizList.length) {
+            state.currentIndex++;
+            render();
+        } else {
+            window.finishQuiz();
+        }
+    }, 1000);
+};
+
+// 네비게이션
+window.prevQuestion = () => {
+    clearTimeout(autoAdvanceTimeout);
+    if (state.currentIndex > 0) {
+        state.currentIndex--;
+        render();
+    }
+};
+
+window.nextQuestion = () => {
+    clearTimeout(autoAdvanceTimeout);
+    if (state.currentIndex + 1 < state.quizList.length) {
+        state.currentIndex++;
+        render();
+    }
+};
+
+window.finishQuiz = () => {
+    clearTimeout(autoAdvanceTimeout);
+    clearProgressSilent(); // 다 풀었으므로 세션 삭제
+    state.view = 'result';
+    render();
+};
+
+
+// --- 5. UI 렌더링 템플릿 (초록색 테마) ---
+function getHomeHTML() {
+    let savedHTML = '';
+    if (state.savedSession) {
+        savedHTML = `
+        <div class="bg-teal-50 border border-teal-200 rounded-2xl shadow-sm p-5 mb-6 mx-5 mt-4 shrink-0">
+            <h2 class="text-lg font-bold text-teal-800 mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-clock-rotate-left"></i> 학습 이어서 하기
+            </h2>
+            <p class="text-sm text-teal-700 mb-4 font-medium opacity-90">
+                저장된 학습 기록이 있습니다!<br>
+                (진행도: ${state.savedSession.currentIndex + 1} / ${state.savedSession.quizList.length})
+            </p>
+            <div class="flex gap-2">
+                <button onclick="resumeQuiz()" class="flex-1 bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-4 rounded-xl shadow transition-transform active:scale-95">
+                    이어서 풀기
+                </button>
+                <button onclick="clearProgress()" class="bg-white border border-teal-200 hover:bg-teal-50 text-teal-700 font-bold py-3 px-4 rounded-xl shadow-sm transition-transform active:scale-95">
+                    기록 지우기
+                </button>
+            </div>
+        </div>
+        `;
+    }
+
+    let setHTML = allSets.map(setNum => {
+        const isChecked = state.selectedSets.includes(setNum);
+        // 각 세트의 시작 번호와 끝 번호 계산 (UI 표시용)
+        const startNo = (setNum - 1) * 20 + 1;
+        const endNo = Math.min(setNum * 20, 189);
+        
+        return `
+        <label class="flex justify-between items-center p-3 mb-2 rounded-xl border ${isChecked ? 'border-teal-500 bg-teal-50' : 'border-slate-200 bg-slate-50 hover:bg-slate-100'} cursor-pointer transition-colors">
+            <div class="flex items-center">
+                <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleSet(${setNum})" class="w-5 h-5 mr-3 rounded border-gray-300">
+                <span class="font-bold text-slate-700">Set ${setNum}</span>
+            </div>
+            <span class="text-xs text-slate-500 bg-white px-2 py-1 rounded-md shadow-sm border border-slate-100">No. ${startNo} ~ ${endNo}</span>
+        </label>`;
+    }).join('');
+
+    const startBtnDisabled = state.selectedSets.length === 0;
+
+    return `
+    <div class="flex-1 overflow-y-auto pb-24 custom-scrollbar flex flex-col h-full">
+        <div class="text-center mb-4 pt-10 px-5 shrink-0">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-teal-100 text-teal-600 mb-4 shadow-inner">
+                <i class="fa-solid fa-graduation-cap text-3xl"></i>
+            </div>
+            <h1 class="text-2xl font-extrabold text-slate-800 mb-1">
+                VOCA 1800 Phrases
+            </h1>
+            <p class="text-teal-600 font-medium">수능특강 영어 어휘 마스터</p>
+            
+            <button onclick="downloadApp()" class="mt-5 text-sm bg-slate-800 hover:bg-slate-700 text-white py-2.5 px-6 rounded-full font-bold transition-transform transform active:scale-95 inline-flex items-center gap-2 shadow-md">
+                <i class="fa-solid fa-download"></i> 이 앱을 파일로 다운로드
+            </button>
+        </div>
+
+        ${savedHTML}
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 mx-5 border border-slate-100 shrink-0">
+            <div class="flex justify-between items-end mb-4">
+                <h2 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group text-teal-500"></i> 학습 범위 (Set)
+                </h2>
+                <div class="space-x-1">
+                    <button onclick="selectAllSets(true)" class="text-xs text-teal-600 hover:underline">전체선택</button>
+                    <span class="text-slate-300">|</span>
+                    <button onclick="selectAllSets(false)" class="text-xs text-slate-500 hover:underline">해제</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-1">
+                ${setHTML}
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm p-6 mb-6 mx-5 border border-slate-100 shrink-0">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-gear text-teal-500"></i> 퀴즈 설정
+            </h2>
+            
+            <div class="mb-5">
+                <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">문제 유형</p>
+                <div class="flex bg-slate-100 p-1 rounded-xl">
+                    <button onclick="setQuizMode('enToKo')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${state.quizMode === 'enToKo' ? 'bg-white shadow-sm text-teal-600' : 'text-slate-500'}">영 ➔ 한</button>
+                    <button onclick="setQuizMode('koToEn')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${state.quizMode === 'koToEn' ? 'bg-white shadow-sm text-teal-600' : 'text-slate-500'}">한 ➔ 영</button>
+                    <button onclick="setQuizMode('mixed')" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${state.quizMode === 'mixed' ? 'bg-white shadow-sm text-teal-600' : 'text-slate-500'}">혼합</button>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider">출제 순서</p>
+                <div class="flex bg-slate-100 p-1 rounded-xl">
+                    <button onclick="setIsRandom(false)" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${!state.isRandom ? 'bg-white shadow-sm text-teal-600' : 'text-slate-500'}">순서대로</button>
+                    <button onclick="setIsRandom(true)" class="flex-1 py-2.5 text-sm font-bold rounded-lg transition-all ${state.isRandom ? 'bg-white shadow-sm text-teal-600' : 'text-slate-500'}">랜덤 섞기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단 고정 버튼 -->
+    <div class="p-5 bg-white sm:rounded-b-3xl absolute bottom-0 left-0 right-0 border-t border-slate-100 z-10 shadow-[0_-10px_20px_-5px_rgba(0,0,0,0.05)]">
+        <button onclick="startQuiz()" ${startBtnDisabled ? 'disabled' : ''} 
+                class="w-full bg-teal-600 hover:bg-teal-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg shadow-teal-600/30 transition-transform transform active:scale-95 disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2 text-lg">
+            <i class="fa-solid fa-play"></i>
+            ${state.selectedSets.length > 0 ? '새로 시작하기' : '범위를 선택하세요'}
+        </button>
+    </div>
+    `;
+}
+
+function getQuizHTML() {
+    const currentWord = state.quizList[state.currentIndex];
+    if (!currentWord) return '';
+
+    const progress = (state.currentIndex / state.quizList.length) * 100;
+
+    let optionsHTML = currentWord.options.map((option, i) => {
+        let btnClass = "w-full p-4 text-left rounded-2xl border-2 transition-all text-lg font-bold ";
+        let iconHTML = "";
+        let meaningHTML = "";
+        
+        if (!currentWord.userAnswer) {
+            // 아직 아무 답도 고르지 않은 상태
+            btnClass += "bg-white border-slate-100 text-slate-700 hover:border-teal-400 hover:bg-teal-50 shadow-sm";
+        } else {
+            // 리뷰 모드 혹은 정답 선택 직후
+            
+            // 각 보기의 반대 언어(원래 뜻) 찾기
+            let optionMeaning = "";
+            const matchedWord = WORD_DATA.find(w => currentWord.isEnToKo ? w.ko === option : w.en === option);
+            if (matchedWord) {
+                optionMeaning = currentWord.isEnToKo ? matchedWord.en : matchedWord.ko;
+                meaningHTML = `<div class="text-sm font-medium mt-1 text-slate-400 break-words whitespace-normal text-left">${optionMeaning}</div>`;
+            }
+
+            if (option === currentWord.correctAnswer) {
+                btnClass += "bg-emerald-50 border-emerald-500 text-emerald-800 shadow-sm";
+                iconHTML = `<i class="fa-solid fa-circle-check text-emerald-500 text-xl shrink-0"></i>`;
+                if(meaningHTML) meaningHTML = `<div class="text-sm font-medium mt-1 text-emerald-700 opacity-90 break-words whitespace-normal text-left">${optionMeaning}</div>`;
+            } else if (option === currentWord.userAnswer) {
+                btnClass += "bg-rose-50 border-rose-500 text-rose-800 shadow-sm";
+                iconHTML = `<i class="fa-solid fa-circle-xmark text-rose-500 text-xl shrink-0"></i>`;
+                if(meaningHTML) meaningHTML = `<div class="text-sm font-medium mt-1 text-rose-700 opacity-90 break-words whitespace-normal text-left">${optionMeaning}</div>`;
+            } else {
+                btnClass += "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
+            }
+        }
+
+        return `
+        <button ${currentWord.userAnswer ? 'disabled' : ''} onclick="selectOption(${i})" class="${btnClass}">
+            <div class="flex justify-between items-center gap-3">
+                <div class="flex-1 flex flex-col items-start">
+                    <span class="break-words whitespace-normal text-left">${option}</span>
+                    ${meaningHTML}
+                </div>
+                ${iconHTML}
+            </div>
+        </button>`;
+    }).join('');
+
+    const isLast = state.currentIndex === state.quizList.length - 1;
+    const hasAnswered = !!currentWord.userAnswer;
+
+    return `
+    <div class="flex-1 flex flex-col p-6 overflow-y-auto bg-slate-50 custom-scrollbar pb-10">
+        <!-- 상단 헤더 -->
+        <div class="flex items-center justify-between mb-6 shrink-0">
+            <button onclick="goToHome()" class="w-10 h-10 flex items-center justify-center text-slate-500 hover:bg-white hover:shadow-sm rounded-full transition-all border border-transparent hover:border-slate-200" title="저장하지 않고 홈으로">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <div class="flex items-center gap-2">
+                <span class="text-sm font-bold text-slate-400 tracking-widest bg-white px-3 py-1 rounded-full shadow-sm border border-slate-100">
+                    <span class="text-teal-600">${state.currentIndex + 1}</span> / ${state.quizList.length}
+                </span>
+            </div>
+            <button onclick="saveProgress()" 
+                    class="flex items-center gap-1.5 px-3 py-2 bg-teal-100 hover:bg-teal-200 text-teal-800 rounded-xl text-sm font-bold transition-colors" title="현재 진행 상황 저장하기">
+                <i class="fa-solid fa-floppy-disk"></i> 저장
+            </button>
+        </div>
+        
+        <div class="w-full bg-slate-200 rounded-full h-2 mb-8 overflow-hidden shrink-0">
+            <div class="bg-teal-500 h-2 rounded-full transition-all duration-300 ease-out" style="width: ${progress}%"></div>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-center mb-2 shrink-0">
+            <div class="text-center mb-8 relative">
+                <span class="absolute -top-6 left-1/2 -translate-x-1/2 inline-block px-3 py-1 bg-teal-600 text-white rounded-full text-xs font-bold shadow-sm whitespace-nowrap">
+                    Set ${currentWord.set} (No. ${currentWord.id})
+                </span>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 mt-2 relative">
+                    ${hasAnswered ? `<span class="absolute top-3 right-4 text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded-md border border-slate-200"><i class="fa-solid fa-eye text-teal-500"></i> 리뷰 중</span>` : ''}
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 break-words leading-tight mt-2">
+                        ${currentWord.questionText}
+                    </h2>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                ${optionsHTML}
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 -->
+        <div class="flex justify-between items-center mt-auto pt-6 gap-3 shrink-0">
+            <button onclick="prevQuestion()" ${state.currentIndex === 0 ? 'disabled' : ''} 
+                    class="flex-1 py-3.5 px-4 rounded-xl font-extrabold flex items-center justify-center gap-2 transition-all ${state.currentIndex === 0 ? 'bg-slate-200 text-slate-400 cursor-not-allowed opacity-50' : 'bg-white border-2 border-teal-200 text-teal-700 hover:bg-teal-50 shadow-sm'}">
+                <i class="fa-solid fa-chevron-left"></i> 이전 단어
+            </button>
+            <button onclick="${isLast ? 'finishQuiz()' : 'nextQuestion()'}" ${!hasAnswered ? 'disabled' : ''} 
+                    class="flex-1 py-3.5 px-4 rounded-xl font-extrabold flex items-center justify-center gap-2 transition-all ${!hasAnswered ? 'bg-slate-200 text-slate-400 cursor-not-allowed opacity-50' : 'bg-teal-600 text-white hover:bg-teal-700 shadow-md shadow-teal-600/20'}">
+                ${isLast ? '결과 보기 <i class="fa-solid fa-flag-checkered"></i>' : '다음 단어 <i class="fa-solid fa-chevron-right"></i>'}
+            </button>
+        </div>
+    </div>
+    `;
+}
+
+function getResultHTML() {
+    // 푼 문제들 기준으로 정답/오답 판별 (동적 계산)
+    const answeredQuestions = state.quizList.filter(q => q.userAnswer);
+    const correctQuestions = answeredQuestions.filter(q => q.userAnswer === q.correctAnswer);
+    const wrongQuestions = answeredQuestions.filter(q => q.userAnswer !== q.correctAnswer);
+
+    // 전체 문제 수 대비 맞은 비율
+    const accuracy = Math.round((correctQuestions.length / state.quizList.length) * 100) || 0;
+    
+    let wrongHTML = '';
+    if (wrongQuestions.length > 0) {
+        const listHTML = wrongQuestions.map(item => `
+            <div class="p-4 bg-slate-50 rounded-2xl mb-3 border border-slate-100">
+                <div class="flex justify-between items-start mb-2">
+                    <span class="font-extrabold text-lg text-slate-800">${item.en}</span>
+                    <span class="text-[10px] font-bold px-2 py-1 bg-teal-100 text-teal-700 rounded-md">No. ${item.id}</span>
+                </div>
+                <p class="text-slate-600 font-medium mb-3">${item.ko}</p>
+                <div class="bg-rose-100 text-rose-700 p-2.5 rounded-xl text-sm flex gap-2 font-bold items-center">
+                    <i class="fa-solid fa-xmark opacity-70"></i>
+                    <span class="whitespace-nowrap opacity-70">나의 선택:</span> 
+                    <span>${item.userAnswer}</span>
+                </div>
+            </div>
+        `).join('');
+
+        wrongHTML = `
+        <div class="bg-white rounded-3xl shadow-sm p-6 mb-8 border border-rose-100 mt-6 text-left relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-1.5 h-full bg-rose-400"></div>
+            <h3 class="text-lg font-bold text-rose-600 mb-5 flex items-center gap-2 pl-2">
+                <i class="fa-solid fa-triangle-exclamation"></i> 오답 노트
+            </h3>
+            <div class="">
+                ${listHTML}
+            </div>
+        </div>`;
+    }
+
+    return `
+    <div class="flex-1 overflow-y-auto p-5 text-center bg-slate-50 custom-scrollbar h-full w-full">
+        <div class="py-10 bg-white rounded-3xl shadow-sm border border-slate-100 mt-2 px-4">
+            <div class="inline-flex items-center justify-center w-28 h-28 rounded-full bg-teal-50 text-teal-600 mb-6 shadow-inner border-4 border-teal-100 relative">
+                <i class="fa-solid fa-ranking-star absolute -top-2 -right-2 text-3xl text-yellow-400 drop-shadow-md"></i>
+                <span class="text-4xl font-black">${accuracy}<span class="text-xl text-teal-400 ml-1">%</span></span>
+            </div>
+            <h2 class="text-2xl font-black text-slate-800 mb-2">수고하셨습니다!</h2>
+            <p class="text-slate-500 font-medium mb-8">
+                총 ${state.quizList.length}문제 중 <strong class="text-teal-600 text-xl mx-1">${correctQuestions.length}</strong>문제를 맞혔습니다.
+            </p>
+
+            <div class="flex flex-col gap-3">
+                <button onclick="startQuiz()" class="w-full bg-white border-2 border-teal-500 text-teal-600 font-extrabold py-3.5 px-4 rounded-xl hover:bg-teal-50 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-rotate-right"></i> 다시 풀기
+                </button>
+                <button onclick="goToHome()" class="w-full bg-teal-600 text-white font-extrabold py-3.5 px-4 rounded-xl hover:bg-teal-700 shadow-md shadow-teal-600/20 transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-house"></i> 홈으로
+                </button>
+            </div>
+        </div>
+        ${wrongHTML}
+    </div>
+    `;
+}
+
+// --- 6. 초기화 및 렌더링 ---
+function render() {
+    const app = document.getElementById('app');
+    if (state.view === 'home') app.innerHTML = getHomeHTML();
+    else if (state.view === 'quiz') app.innerHTML = getQuizHTML();
+    else if (state.view === 'result') app.innerHTML = getResultHTML();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    loadSavedSession();
+    render();
+});
+</script>
+
+</body>
+</html>
